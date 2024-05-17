@@ -62,9 +62,15 @@ app.post("/api/user/login", (req, res) => {
     });
 });
 
+app.get('/', (req,res)=>{
+    res.status(200).send('Welcome to the user-api')
+})
+
+
 app.get("/api/user/favourites",passport.authenticate('jwt', { session: false }), (req, res) => {
     userService.getFavourites(req.user._id)
     .then(data => {
+        console.log("here is in the server" + data);
         res.json(data);
     }).catch(msg => {
         res.status(422).json({ error: msg });
@@ -93,7 +99,8 @@ app.delete("/api/user/favourites/:id",passport.authenticate('jwt', { session: fa
 app.get("/api/user/history",passport.authenticate('jwt', { session: false }), (req, res) => {
     userService.getHistory(req.user._id)
     .then(data => {
-        res.json(data);
+        console.log("here is in the server" + data);
+        res.send(data);
     }).catch(msg => {
         res.status(422).json({ error: msg });
     })
