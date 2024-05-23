@@ -147,7 +147,7 @@ module.exports.addHistory = function (id, historyId) {
     return new Promise(function (resolve, reject) {
 
         User.findById(id).exec().then(user => {
-            if (user.favourites.length < 50) {
+            if (user.history.length < 50) {
                 User.findByIdAndUpdate(id,
                     { $addToSet: { history: historyId } },
                     { new: true }
