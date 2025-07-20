@@ -43,16 +43,21 @@ JWT_SECRET=create_your_own_secret_key
 MONGO_URL=your_mongo_url_here
 
 ### 4. Run the server
+```bash
 node server.js
+```
 
 ### 5. Test the API
 Use Postman or any HTTP client to test the API by making requests to the endpoints.
+
 POST /register — Register a new user
 
 POST /login — Login and receive a JWT<your_token>
 
 Use the JWT to access protected routes like:
+
     GET /favourites
+    
     GET /history
     * Include the token received in the Authorization header as:
     Authorization: jwt <your_token>
