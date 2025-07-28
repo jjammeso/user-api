@@ -38,9 +38,9 @@ npm install
 ### 3. Create .env File
 Create a .env file in the root directory with the following:
 
-PORT=8080
-JWT_SECRET=create_your_own_secret_key
-MONGO_URL=your_mongo_url_here
+    PORT=8080
+    JWT_SECRET=create_your_own_secret_key
+    MONGO_URL=your_mongo_url_here
 
 ### 4. Run the server
 ```bash
