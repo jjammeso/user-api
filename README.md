@@ -56,9 +56,23 @@ Use Postman or any HTTP client to test the API by making requests to the endpoin
 
 Use the JWT to access protected routes like:
 
-    GET /api/user/favourites
+- GET /api/user/favourites
+- PUT /api/user/favourites/:id
+- DELETE /api/user/favourites/:id
+- GET /api/user/history
+- PUT /api/user/history/:id
+- DELETE /api/user/history/:id
+
+Include the JWT token in the Authorization header like this:
     
-    GET /api/user/history
-    * Include the token received in the Authorization header as:
     Authorization: jwt <your_token>
 
+## 📄 License
+
+MIT License
+
+## ✍️ Author
+
+Sonam Jamtsho
+📧 sjjamtsho@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/sonam-jamtsho-944288228/)
