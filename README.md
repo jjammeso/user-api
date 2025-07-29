@@ -74,5 +74,6 @@ MIT License
 ## ✍️ Author
 
 Sonam Jamtsho
-📧 sjjamtsho@gmail.com
+
+📧 sjjamtsho@gmail.com | 
 🔗 [LinkedIn](https://www.linkedin.com/in/sonam-jamtsho-944288228/)
